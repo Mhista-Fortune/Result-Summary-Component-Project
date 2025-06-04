@@ -1,0 +1,5 @@
+{
+    "editor.emptySelectionClipboard": false,
+    "editor.experimental.asyncTokenizationLogging": true,
+    "liveServer.settings.port": 5501
+}

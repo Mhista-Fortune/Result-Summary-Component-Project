@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Results summary component | Frontend Mentor Challenge</title>
+</head>
+
+<body>
+  <main>
+    <div class="result-container">
+      <div class="result-section">
+        <h1>Your Result</h1>
+        <div class="result-section__circle">
+          <h2>76</h2>
+          <p>of 100</p>
+        </div>
+        <h3>Great</h3>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+      <div class="summary-section">
+        <h2>Summary</h2>
+
+        <ul class="summary-section__list" id="summary-list">
+          <li class="reaction-item">
+            <div class="summary-section__category">
+              <img src="assets/images/icon-reaction.svg" alt="">
+              <p class="reaction-txt">Reaction</p>
+            </div>
+            <p><span class="bold-txt">80</span> / 100</p>
+          </li>
+          <li class="memory-item">
+            <div class="summary-section__category">
+              <img src="assets/images/icon-memory.svg" alt="">
+              <p class="memory-txt">Memory</p>
+            </div>
+            <p><span class="bold-txt">92</span> / 100</p>
+          </li>
+          <li class="verbal-item">
+            <div class="summary-section__category">
+              <img src="assets/images/icon-verbal.svg" alt="">
+              <p class="verbal-txt">Verbal</p>
+            </div>
+            <p><span class="bold-txt">61</span> / 100</p>
+          </li>
+          <li class="visual-item">
+            <div class="summary-section__category">
+              <img src="assets/images/icon-visual.svg" alt="">
+              <p class="visual-txt">Visual</p>
+            </div>
+            <p><span class="bold-txt">72</span> / 100</p>
+          </li>
+        </ul>
+
+        <button class="summary-section__cont-btn" id="btn">Continue</button>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/Mhista-Fortune/" target="_blank">Mhista Fortune</a>.
+    <script src="main.js"></script>
+  </footer>
+</body>
+
+</html>

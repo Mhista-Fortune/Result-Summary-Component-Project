@@ -1,0 +1,288 @@
+:root {
+    /* Primary colors */
+    --clr-light-red: 0 100% 67%;
+    --clr-orangey-yellow: 39 100% 56%;
+    --clr-green-teal: 166 100% 37%;
+    --clr-cobalt-blue: 234 85% 45%;
+
+    /* Background gradient */
+    --clr-light-slate-blue: 252 100% 67%; 
+    --clr-light-royal-blue: 241 81% 54%;
+
+    /* Circle gradient */
+    --clr-violet-blue: hsl(256, 72%, 46%, 1);
+    --clr-persian-blue: hsl(241, 72%, 46%, 0);
+
+    /* Neutral */
+    --clr-white: 0 0% 100%;
+    --clr-pale-blue: 221 100% 96%;
+    --clr-light-lavender: 241 100% 89%;
+    --clr-dark-gray-blue: 224 30% 27%;
+
+    /* Border radius */
+    --br-container: 1.5rem;
+}
+
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf) format('truetype');
+    font-weight: 500 800;
+}
+
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* STYLING BEGINS */
+body {
+    font-size: 1.125rem; /* 18px */
+    font-family: 'Hanken Grotesk', Arial, Helvetica, sans-serif;
+    background: hsl(var(--clr-pale-blue));
+    flex-direction: column;
+
+}
+
+.result-container {
+    background: hsl(var(--clr-white));
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    box-shadow: 0 0 0.75rem hsl(0, 0%, 91%);
+}
+
+.result-section {
+    background: linear-gradient(hsl(var(--clr-light-slate-blue)), hsl(var(--clr-light-royal-blue)));
+    color: hsl(var(--clr-white));
+    border-radius: 0 0 var(--br-container) var(--br-container);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 2.5rem;
+}
+
+.result-section h1, p {
+    color: hsl(var(--clr-light-lavender));
+}
+
+.result-section h1 {
+    font-size: 1rem;
+}
+
+.result-section h2 {
+    font-size: 3.5rem;
+}
+
+.result-section h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+
+.result-section p {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+}
+
+.result-section__circle {
+    background: linear-gradient(var(--clr-violet-blue), var(--clr-persian-blue));
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.5rem 0;
+}
+
+.result-section__circle p {
+    margin-top: -0.3rem;
+    color: hsla(241, 100%, 89%, 0.6);
+}
+
+.summary-section {
+    background: hsl(var(--clr-white));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.summary-section h2 {
+    font-size: 1.1rem;
+}
+
+.summary-section__list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    color: hsla(var(--clr-dark-gray-blue) / 0.6);
+}
+
+.summary-section__list img {
+    width: 1rem;
+}
+
+.summary-section__list li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem;
+    margin: 0.8rem 0;
+    border-radius: 0.5rem;
+}
+
+.summary-section__category {
+    display: flex;
+}
+
+.summary-section__list p {
+    padding-left: 0.5rem;
+}
+
+.reaction-item {
+    background: hsl(var(--clr-light-red) / 0.08);
+}
+
+.reaction-txt {
+    color: hsl(var(--clr-light-red));
+}
+
+.memory-item {
+    background: hsl(var(--clr-light-yellow) / 0.08);
+}
+
+.memory-txt {
+    color: var(--clr-orangey-yellow);
+}
+
+.verbal-item {
+    background: hsl(var(--clr-green-teal) / 0.08);
+}
+
+.verbal-txt {
+    color: var(--clr-green-teal);
+}
+
+.visual-item {
+    background: hsl(var(--clr-cobalt-blue) / 0.05);
+}
+
+.visual-txt {
+    color: var(--clr-cobalt-blue);
+}
+
+.bold-txt {
+    font-weight: 700;
+    color: var(--clr-dark-gray-blue);
+}
+
+.summary-section__cont-btn {
+    border: none;
+    border-radius: 30rem;
+    background: hsl(var(--clr-cobalt-blue) / 0.05);
+    color: hsl(256, 72%, 46%, 1);
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+}
+
+.summary-section__cont-btn:hover {
+    cursor: pointer;
+    background: var(--clr-dark-gray-blue);
+}
+
+.attribution {
+    font-size: 0.6875rem; /* 11px */
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 480px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .result-container {
+        max-width: 36rem;
+        border-radius: var(--br-container);
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    .result-section {
+        border-radius: var(--br-container);
+    }
+
+    .summary-section {
+        border-radius: var(--br-container);
+    }
+
+    .attribution {
+        padding: 0.5rem 0 0 0;
+    }
+}
