@@ -1,69 +1,82 @@
-Frontend Mentor - Results summary component solution
+# Frontend Mentor - Results Summary Component
 
-This is a solution to the Results summary component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
-Table of contents
+This is a solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io). Users can view a responsive results summary card that displays their score and a breakdown by category.
 
-    Overview
-        The challenge
-        Screenshot
-        Links
-    My process
-        Built with
-        What I learned
-        Continued development
-        Useful resources
-    Author
-    Acknowledgments
+## Table of Contents
 
-Overview
-The challenge
+- [Overview](#overview)
+- [The Challenge](#the-challenge)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Built With](#built-with)
+- [Features](#features)
+- [What I Learned](#what-i-learned)
+- [How to Use](#how-to-use)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
+
+## Overview
+
+This project is a responsive results summary component that displays a user's overall score and a breakdown of their performance in different categories. The layout adapts to both mobile and desktop screens and uses semantic HTML, CSS Grid, and Flexbox for structure and styling.
+
+### The Challenge
 
 Users should be able to:
 
-    View the optimal layout for the interface depending on their device's screen size
-    See hover and focus states for all interactive elements on the page
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
 
-Screenshot
+## Screenshot
 
-Desktop:
+![Desktop Screenshot](screenshots/desktop-view.png)
+![Mobile Screenshot](screenshots/mobile-view.png)
 
-Mobile:
-Links
+## Links
 
-    Solution URL: https://www.frontendmentor.io/solutions/responsive-results-summary-using-css-grid-and-flexbox-AY52dCLJrO
-    Live Site URL: 
+- [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-results-summary-using-css-grid-and-flexbox-AY52dCLJrO)
+- [Live Site](https://results-component-summary-frontend-mentor.vercel.app/) <!-- Add your live site URL here -->
 
-My process
-Built with
+## Built With
 
-    Semantic HTML5 markup
-    CSS custom properties
-    Flexbox
-    CSS Grid
-    Mobile-first workflow
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- Vanilla JavaScript (for dynamic summary rendering)
 
-What I learned
+## Features
 
-I got more practice in positioning items with CSS grid and Flexbox.
+- Responsive layout for mobile and desktop
+- Dynamic summary list generated from a JSON file
+- Accessible and semantic HTML structure
+- Custom styles for each summary category
 
-I also started learning to write CSS with a mobile-first workflow in order to improve my web page layout on mobile devices.
-Continued development
+### What I Learned
 
-I aim to refine my techniques in positioning items on a web page by using CSS grid and Flexbox.
-Useful resources
+**Dynamic Data Rendering:**  
+I learned how to fetch data from a local JSON file and dynamically render UI components using JavaScript, making the summary section flexible and easy to update.
 
-    A Complete Guide to CSS Grid by Chris House
-    Complete CSS Grid Tutorial with Cheat Sheet by Joy Shaheb
-    GRID - A visual cheatsheet for CSS grid layout
-    A Complete Guide to Flexbox by Chris Coyier
-    CSS Flexbox Tutorial with Flexbox Properties Cheat Sheet by Joy Shaheb
-    Flexbox Cheat Sheet
+**CSS Grid & Flexbox:**  
+This project helped me practice positioning elements using both CSS Grid and Flexbox, and reinforced the benefits of a mobile-first workflow.
 
-Author
+**Accessibility:**  
+I improved my understanding of semantic HTML and accessibility best practices, such as using appropriate tags and alt attributes.
 
-    Website - Egwu Ifeakarochukwu
-    Frontend Mentor - @Mhista-Fortune
-Acknowledgments
+## How to Use
 
-    Helen Chong for providing feedback regarding the mobile layout, which helped me in rewriting CSS with mobile-first workflow,
-    for providing feedback regarding the lack of need of an alt attribute to decorative SVGs and for offering the suggestion to use an unordered list element for the summary.
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/Mhista-Fortune/Results-Summary-Component
+   ```
+2. Open `index.html` in your browser to view the project.
+3. To customize the summary data, edit the `data.json` file.
+
+## Author
+
+- Solution by [Egwu Ifeakarochukwu](https://github.com/Mhista-Fortune)
+- [Frontend Mentor](https://www.frontendmentor.io/profile/Mhista-Fortune)
+
+## Acknowledgments
+
+- Challenge by [Frontend Mentor](https://www.frontendmentor.io?ref=challenge)
