@@ -247,7 +247,9 @@ body {
 
 .summary-section__cont-btn:hover {
     cursor: pointer;
-    background: var(--clr-dark-gray-blue);
+    background: linear-gradient(hsl(var(--clr-light-slate-blue)), hsl(var(--clr-light-royal-blue)));
+    color: #fff;
+    /* background: var(--clr-dark-gray-blue); */
 }
 
 .attribution {
